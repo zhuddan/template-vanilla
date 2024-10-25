@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@zd~/shapex':
-        specifier: ^0.0.1
-        version: 0.0.1
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.21.1
@@ -522,9 +518,6 @@ packages:
 
   '@vue/shared@3.4.30':
     resolution: {integrity: sha512-CLg+f8RQCHQnKvuHY9adMsMaQOcqclh6Z5V9TaoMgy0ut0tz848joZ7/CYFFyF/yZ5i2yaw7Fn498C+CNZVHIg==}
-
-  '@zd~/shapex@0.0.1':
-    resolution: {integrity: sha512-Yw0JhoMp/x9++lN4x6JC/KZeoHmPGdWyrms/s/PUh4hzz/aL0mnbAyH2anDyPZ/xpykFP6WzaPOIPSe70CxR1A==}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -2122,8 +2115,6 @@ snapshots:
       '@vue/shared': 3.4.30
 
   '@vue/shared@3.4.30': {}
-
-  '@zd~/shapex@0.0.1': {}
 
   acorn-jsx@5.3.2(acorn@8.12.0):
     dependencies:

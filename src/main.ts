@@ -1,25 +1,15 @@
-import './style.css'
-import { App, Text } from '@zd~/shapex'
-
-const app = new App()
-const t = new Text({
-  text: '@zd~/shapex',
-  style: {
-    fontSize: 18,
-  },
-})
-t.position.set(200)
-app.add(t)
-document.body.appendChild(app.canvas)
-
-let d = 1
-function update() {
-  t.rotation += 0.01
-  const scale = 0.01
-  t.scale.set(t.scale.x += d * scale)
-  if (t.scale.x > 2 || t.scale.x < -2) {
-    d *= -1
-  }
-  requestAnimationFrame(update)
+const app = document.getElementById('app')!
+function init() {
+  updateAppText(new Date())
+  requestAnimationFrame(init)
 }
-requestAnimationFrame(update)
+
+function updateAppText(t: Date) {
+  const appTextContent = app.textContent
+  const nextText = t.toLocaleTimeString()
+  if (appTextContent !== nextText) {
+    app.textContent = nextText
+  }
+}
+
+init()
